@@ -1,0 +1,12 @@
+alias ll='ls -l'
+alias la='ls -lA'
+alias lld='ll -d */'
+
+alias cat='bat -P'
+alias less='bat'
+
+alias gdb='gdb -q'
+
+if [ $TERM = "xterm-kitty" ] || [ $TERM = "xterm-ghostty" ]; then
+  alias fastfetch='fastfetch -l $HOME/.dotfpx/fetch_logo.png --logo-type kitty-direct --logo-padding-top 1 --logo-padding-right 6 --logo-padding-left 6';
+fi

@@ -1,0 +1,36 @@
+RST_COLOR="$(tput sgr0)"
+GREEN="$(tput setaf 2)"
+PURPLE="$(tput setaf 57)"
+TEAL="$(tput setaf 75)"
+GOLD="$(tput setaf 222)"
+
+term_colors()
+{
+  for COLOR in $(seq 0 256); do
+    tput setaf $COLOR;
+    echo tput setaf $COLOR;
+  done
+}
+
+short_pwd()
+{
+  # edge-cases:
+  if [ "$PWD" = "/" ]; then echo "/"; return; fi
+  FOUND=""
+  GREP_RESULT=$(echo $PWD | grep -ob $HOME)
+  if [ "${GREP_RESULT:0:1}" == "0" ]; then FULLDIR=${PWD/${HOME}/\~}; else FULLDIR=$PWD; fi
+  IFS="/";
+  for DIR in $FULLDIR; do
+    [ -z "$DIR" ] && continue
+    if [ ! "$DIR" = "~" ]; then echo -n "/"; FOUND+="/"; fi
+    FOUND+="$DIR"
+    if [ "$FOUND" != "$FULLDIR" ]; then
+      echo -n ${DIR:0:1};
+    else
+      echo -n $DIR;
+    fi
+  done;
+  IFS=" "
+}
+
+PS1='${TEAL}\u@\h ${RST_COLOR}[$(short_pwd)] \$ '
