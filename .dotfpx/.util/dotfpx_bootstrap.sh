@@ -24,4 +24,7 @@ rm -rf $HOME/.config/nvim/.git
 
 git clone https://github.com/foorpyxof/dotfiles $HOME/.dotfpx-git
 rm -rf $HOME/.dotfpx-git/.git
-mv $HOME/.dotfpx-git/* $HOME/
+
+cp -rt $HOME/ $HOME/.dotfpx-git/* $HOME/.dotfpx-git/.*
+
+$HOME/.dotfpx/bin/dotfpx_install.sh

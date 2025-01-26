@@ -35,6 +35,7 @@ $MANAGER fastfetch nano htop openssh bat grep gdb gcc curl clang zip unzip
 
 # install nerd-font (cascadia-code)
 echo -e "\nInstalling fonts..."
+mkdir $HOME/.dotfpx/fonts
 curl 'https://internal.goodgirl.dev/api/share/files/cc_nerdfont?m=d' \
   -o $HOME/.dotfpx/fonts/CascadiaCodeNF.ttf
 mkdir -p $HOME/.local/share/fonts/dotfpx
