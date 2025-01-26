@@ -31,7 +31,7 @@ done < $HOME/.dotfpx/config
 
 # add packages to install here
 echo -e "\nInstalling packages..."
-$MANAGER fastfetch nano htop openssh bat grep gdb gcc curl
+$MANAGER fastfetch nano htop openssh bat grep gdb gcc curl clang zip unzip
 
 # install nerd-font (cascadia-code)
 echo -e "\nInstalling fonts..."

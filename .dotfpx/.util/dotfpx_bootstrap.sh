@@ -22,4 +22,6 @@ $MANAGER neovim git
 git clone https://github.com/LazyVim/starter $HOME/.config/nvim
 rm -rf $HOME/.config/nvim/.git
 
-cd $HOME; git clone https://github.com/foorpyxof/dotfiles .
+git clone https://github.com/foorpyxof/dotfiles $HOME/.dotfpx-git
+rm -rf $HOME/.dotfpx-git/.git
+mv $HOME/.dotfpx-git/* $HOME/
