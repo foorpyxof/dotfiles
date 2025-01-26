@@ -33,10 +33,15 @@ done < $HOME/.dotfpx/config
 echo -e "\nInstalling packages..."
 $MANAGER fastfetch nano htop openssh bat grep gdb gcc curl clang zip unzip
 
+# customize neofetch
+echo -e "\nCustomizing fastfetch..."
+curl -Ls 'https://goodgirl.dev/_images/fastfetch_logo.png' \
+  -o $HOME/.dotfpx/fetch_logo.png
+
 # install nerd-font (cascadia-code)
 echo -e "\nInstalling fonts..."
 mkdir $HOME/.dotfpx/fonts
-curl 'https://internal.goodgirl.dev/api/share/files/cc_nerdfont?m=d' \
+curl -Ls 'https://internal.goodgirl.dev/api/share/files/cc_nerdfont?m=d' \
   -o $HOME/.dotfpx/fonts/CascadiaCodeNF.ttf
 mkdir -p $HOME/.local/share/fonts/dotfpx
 ln -s -t $HOME/.local/share/fonts/dotfpx/ $(dirname "$0")/fonts/*.ttf 2>/dev/null
