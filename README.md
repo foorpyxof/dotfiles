@@ -5,4 +5,4 @@
 - A custom bash prompt theme and a little fastfetch config
 
 ## How to install:
-```curl -Ls https://raw.githubusercontent.com/foorpyxof/dotfiles/refs/heads/master/.dotfpx/.util/dotfpx_bootstrap.sh -o $HOME/dotfpx_bootstrap.sh && chmod +x $HOME/dotfpx_bootstrap.sh && $HOME/dotfpx_bootstrap.sh```
+```curl -Ls https://goodgirl.dev/raw/dotfpx_bootstrap.sh -o $HOME/dotfpx_bootstrap.sh && chmod +x $HOME/dotfpx_bootstrap.sh && $HOME/dotfpx_bootstrap.sh```
