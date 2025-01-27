@@ -49,3 +49,5 @@ ln -s -t $HOME/.local/share/fonts/dotfpx/ $(dirname "$0")/fonts/*.ttf 2>/dev/nul
 if ! grep -q "source \$HOME/.dotfpx/bash.src" $HOME/.bashrc; then
   echo "source \$HOME/.dotfpx/bash.src" >> $HOME/.bashrc;
 fi
+
+source $HOME/.bashrc
