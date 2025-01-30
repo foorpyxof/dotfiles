@@ -38,13 +38,14 @@ echo -e "\nCustomizing fastfetch..."
 curl -Ls 'https://goodgirl.dev/_images/fastfetch_logo.png' \
   -o $HOME/.dotfpx/fetch_logo.png
 
-# install nerd-font (cascadia-code)
+# install fonts
 echo -e "\nInstalling fonts..."
-mkdir $HOME/.dotfpx/fonts
-curl -Ls 'https://internal.goodgirl.dev/api/share/files/cc_nerdfont?m=d' \
-  -o $HOME/.dotfpx/fonts/CascadiaCodeNF.ttf
 mkdir -p $HOME/.local/share/fonts/dotfpx
-ln -s -t $HOME/.local/share/fonts/dotfpx/ $(dirname "$0")/fonts/*.ttf 2>/dev/null
+curl -Ls 'https://internal.goodgirl.dev/api/share/files/dotfpx_fonts?m=d' \
+  -o $HOME/.local/share/fonts/dotfpx/dotfpx_fonts.zip
+cd $HOME/.local/share/fonts/dotfpx
+unzip dotfpx_fonts.zip
+cd -
 
 if ! grep -q "source \$HOME/.dotfpx/bash.src" $HOME/.bashrc; then
   echo "source \$HOME/.dotfpx/bash.src" >> $HOME/.bashrc;
