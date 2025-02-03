@@ -51,4 +51,8 @@ if ! grep -q "source \$HOME/.dotfpx/bash.src" $HOME/.bashrc; then
   echo "source \$HOME/.dotfpx/bash.src" >> $HOME/.bashrc;
 fi
 
+if ! grep -q "source \$HOME/.dotfpx/bash_env" $HOME/.bash_profile; then
+  echo "source \$HOME/.dotfpx/bash_env" >> $HOME/.bash_profile;
+fi
+
 source $HOME/.bashrc

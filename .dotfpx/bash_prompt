@@ -33,4 +33,4 @@ short_pwd()
   IFS=" "
 }
 
-PS1='${TEAL}\u@\h ${RST_COLOR}[$(short_pwd)] \$ '
+PS1='\[${TEAL}\]\u@\h \[${RST_COLOR}\][$(short_pwd)] \$ '
