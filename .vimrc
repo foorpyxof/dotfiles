@@ -16,4 +16,4 @@ set scroll=5
 
 set mouse=a
 
-set tags=./tags;,/home/erynn/.config/nvim/tags
+set tags=./tags;,~/.config/nvim/tags
