@@ -5,7 +5,7 @@ Configure() {
   select answer in "pacman" "apt-get"; do
     case $answer in
       "pacman" ) MANAGER="sudo pacman -S --needed --noconfirm"; break;;
-      "apt-get" ) MANAGER="sudo apt-get install"; break;;
+      "apt-get" ) MANAGER="sudo apt-get install -y"; break;;
     esac
   done
 

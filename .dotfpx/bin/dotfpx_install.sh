@@ -5,7 +5,7 @@ Configure() {
   select answer in "pacman" "apt-get"; do
     case $answer in
       "pacman" ) MANAGER="sudo pacman -S --needed --noconfirm"; break;;
-      "apt-get" ) MANAGER="sudo apt-get install"; break;;
+      "apt-get" ) MANAGER="sudo apt-get install -y"; break;;
     esac
   done
 
@@ -31,7 +31,7 @@ done < $HOME/.dotfpx/config
 
 # add packages to install here
 echo -e "\nInstalling packages..."
-$MANAGER fastfetch nano htop openssh bat grep gdb gcc curl clang zip unzip
+$MANAGER fastfetch nano htop openssh bat grep gdb gcc curl clang zip unzip sshfs
 
 # customize neofetch
 echo -e "\nCustomizing fastfetch..."
