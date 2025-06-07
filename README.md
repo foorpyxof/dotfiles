@@ -32,3 +32,7 @@ Also comes with a pink/purple-ish bash prompt that contains a shortened absolute
 
 ### Aliases
 Sets aliases for several applications to use certain flags quickly (e.g. `la` for `ls -lA`)
+
+# Previews
+## Desktop
+![screenshot of desktop](https://raw.githubusercontent.com/foorpyxof/dotfiles/refs/heads/master/assets/preview.png)
