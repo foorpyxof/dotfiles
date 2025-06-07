@@ -9,6 +9,9 @@
 - Kitty
 - Fastfetch
 
+## Additional dependencies
+- [ammgws/autotiling-rs](https://github.com/ammgws/autotiling-rs) for alternating the tile splitting direction for Sway
+
 Some can be included from your main config file in `~/.config`, like Kitty.
 
 `~/.config/kitty/kitty.conf`:
