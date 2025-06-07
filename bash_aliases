@@ -1,3 +1,4 @@
+alias ls='ls --color=auto --hyperlink=auto'
 alias ll='ls -l'
 alias la='ls -lA'
 alias lld='ll -d */'

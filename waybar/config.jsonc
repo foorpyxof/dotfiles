@@ -8,12 +8,17 @@
   "margin-right" : 100,
   "margin-left" : 100,
 
-  "modules-left" : ["sway/workspaces"],
+  "modules-left" : ["sway/scratchpad", "sway/workspaces"],
   "modules-center" : ["custom/applauncher"],
   "modules-right" : ["network", "pulseaudio", "tray", "clock"],
 
   "sway/workspaces" : {
     "all-outputs" : false,
+    "tooltip" : false,
+  },
+
+  "sway/scratchpad" : {
+    "show-empty" : true,
     "tooltip" : false,
   },
 

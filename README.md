@@ -1,7 +1,7 @@
 # Erynn's .dotfiles!
 
 ## Covers the following applications:
-- Sway
+- SwayFX (Some options will **NOT** be compatible with base Sway)
 - Waybar
 - Wofi
 - Vim
