@@ -27,7 +27,7 @@ put `source [path_to_source.bash]` into your `~/.bashrc` file
 
 ### Custom prompt
 Also comes with a pink/purple-ish bash prompt that contains a shortened absolute path
-![custom prompt image](https://url.com/ (UPDATE WITH PROPER URL))
+![custom prompt image](https://raw.githubusercontent.com/foorpyxof/dotfiles/refs/heads/master/assets/prompt.png)
 
 ### Aliases
 Sets aliases for several applications to use certain flags quickly (e.g. `la` for `ls -lA`)
