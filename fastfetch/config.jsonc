@@ -12,7 +12,6 @@
       "1": "38;5;139",
       "2": "38;5;134",
     },
-    // "source": "~/.dotfpx/fetch_logo.png"
   },
   "display": {
     "separator": " => ",

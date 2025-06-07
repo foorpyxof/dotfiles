@@ -10,6 +10,7 @@
 - Fastfetch
 
 Some can be included from your main config file in `~/.config`, like Kitty.
+
 `~/.config/kitty/kitty.conf`:
 ```conf
 include [path_to_kitty.conf_in_this_repository]
