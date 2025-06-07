@@ -1,0 +1,44 @@
+* {
+  font-family: "Kode Mono";
+  background: transparent;
+}
+
+#window {
+  color: #dedede;
+
+}
+
+#scroll {
+  /* border: 2px solid #6f507c; */
+  border: 3px solid #2d1637;
+  border-radius: 20px;
+
+  background-image: linear-gradient(to bottom right, #4b245b, #26122e);
+  padding: 0 15px;
+
+  margin-top: 10px;
+}
+
+#inner-box {
+  padding-top: 10px;
+}
+
+#entry {
+  border-style: none;
+  border-radius: 0;
+  padding: 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+#entry:selected {
+  border-radius: 15px;
+  background-image: linear-gradient(to left, #3b174e, #26122e);
+}
+
+#input {
+  background-image: linear-gradient(to bottom, #3d1a4b, #2b043b);
+}
+
+#img {
+  margin-right: 12px;
+}

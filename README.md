@@ -1,8 +1,33 @@
-# My dotfiles!
+# Erynn's .dotfiles!
 
-## What gets installed?
-- NeoVim+LazyVim with a few themes and some LSPs
-- A custom bash prompt theme and a little fastfetch config
+## Covers the following applications:
+- Sway
+- Waybar
+- Wofi
+- Vim
+- Neovim (+ LazyVim)
+- Kitty
+- Fastfetch
 
-## How to install:
-```curl -Ls https://goodgirl.dev/raw/dotfpx_bootstrap.sh -o $HOME/dotfpx_bootstrap.sh && chmod +x $HOME/dotfpx_bootstrap.sh && $HOME/dotfpx_bootstrap.sh```
+Some can be included from your main config file in `~/.config`, like Kitty.
+`~/.config/kitty/kitty.conf`:
+```conf
+include [path_to_kitty.conf_in_this_repository]
+```
+
+Others have to be linked:
+```bash
+cd ~/.config/waybar/
+ln -s [path_to_waybar/config.jsonc_in_this_repository]
+ln -s [path_to_waybar/style.css_in_this_repository]
+```
+
+## Bash things
+put `source [path_to_source.bash]` into your `~/.bashrc` file
+
+### Custom prompt
+Also comes with a pink/purple-ish bash prompt that contains a shortened absolute path
+![custom prompt image](https://url.com/ (UPDATE WITH PROPER URL))
+
+### Aliases
+Sets aliases for several applications to use certain flags quickly (e.g. `la` for `ls -lA`)

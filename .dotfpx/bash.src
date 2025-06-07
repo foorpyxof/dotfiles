@@ -1,7 +1,0 @@
-source $HOME/.dotfpx/bash_aliases
-source $HOME/.dotfpx/bash_prompt
-
-if [ -z $TMUX ]; then
-  echo "" && neofetch
-fi
-
