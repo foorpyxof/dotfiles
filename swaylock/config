@@ -1,6 +1,5 @@
 show-failed-attempts
 daemonize
-image=/home/erynn/Pictures/backgrounds/synth_skull.jpg
 indicator-caps-lock
 scaling=fill
 font=Kode Mono

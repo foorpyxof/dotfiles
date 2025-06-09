@@ -30,13 +30,9 @@ window#waybar {
   padding: 0px 11px;
 }
 
-#tray {
-  /* padding: 9px 0; */
+#workspaces button.focused {
+  background-image: linear-gradient(to bottom, #4b4b4b, #4c245c);
 }
-
-/* #tray > * > *::after { */
-/*   border-right: 1px solid grey; */
-/* } */
 
 #tray > * > * {
   margin: 0 6px;

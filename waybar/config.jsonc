@@ -10,7 +10,7 @@
 
   "modules-left" : ["sway/scratchpad", "sway/workspaces"],
   "modules-center" : ["custom/applauncher"],
-  "modules-right" : ["network", "pulseaudio", "tray", "clock"],
+  "modules-right" : ["network", "pulseaudio", "tray", "battery", "clock"],
 
   "sway/workspaces" : {
     "all-outputs" : false,
