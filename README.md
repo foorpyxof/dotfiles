@@ -39,3 +39,4 @@ Sets aliases for several applications to use certain flags quickly (e.g. `la` fo
 # Previews
 ## Desktop
 ![screenshot of desktop](https://raw.githubusercontent.com/foorpyxof/dotfiles/refs/heads/master/assets/preview.png)
+![screenshot of desktop, but with open windows](https://raw.githubusercontent.com/foorpyxof/dotfiles/refs/heads/master/assets/preview_with_windows_open.png)
