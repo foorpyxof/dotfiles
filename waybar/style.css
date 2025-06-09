@@ -30,6 +30,27 @@ window#waybar {
   padding: 0px 11px;
 }
 
+#tray {
+  /* padding: 9px 0; */
+}
+
+/* #tray > * > *::after { */
+/*   border-right: 1px solid grey; */
+/* } */
+
+#tray > * > * {
+  margin: 0 6px;
+}
+
+#tray > *:hover {
+  border-radius: 25%;
+  background-image: linear-gradient(to bottom, #4b4b4b, #4c245c);
+}
+
+#tray:last-child {
+  border-right: 0px solid grey;
+}
+
 #scratchpad {
   margin: 0 12px;
 }
