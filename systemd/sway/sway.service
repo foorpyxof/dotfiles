@@ -6,6 +6,7 @@ Documentation=man:sway(5)
 Type=simple
 EnvironmentFile=-%h/.config/sway/env
 ExecStartPre=systemctl --user unset-environment WAYLAND_DISPLAY DISPLAY
+ExecStartPre=sleep 2
 
 ; add ARG[X] variables to the ~/.config/sway/env file to use as command line arguments
 ; if you need more than 6, add more to the line below
