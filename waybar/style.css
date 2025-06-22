@@ -15,14 +15,7 @@ window#waybar {
   padding: 0;
 }
 
-#battery,
-#network,
-#clock,
-#custom-applauncher,
-#tray,
-#workspaces,
-#pulseaudio
-{
+.module:not(#scratchpad) {
   background-image: linear-gradient(to bottom, #2b2b2b, #2c043c);
 
   margin: 4px;
@@ -35,16 +28,12 @@ window#waybar {
 }
 
 #tray > * > * {
-  margin: 0 6px;
+  padding: 0 4px;
 }
 
 #tray > *:hover {
   border-radius: 25%;
   background-image: linear-gradient(to bottom, #4b4b4b, #4c245c);
-}
-
-#tray:last-child {
-  border-right: 0px solid grey;
 }
 
 #scratchpad {
