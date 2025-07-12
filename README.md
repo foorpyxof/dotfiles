@@ -11,6 +11,7 @@
 
 ## Additional dependencies
 - [ammgws/autotiling-rs](https://github.com/ammgws/autotiling-rs) for alternating the tile splitting direction for Sway
+- [ATTron/swaddle](https://github.com/ATTron/swaddle) for allowing swayidle to listen to DBus inhibition messages
 
 Some can be included from your main config file in `~/.config`, like Kitty.
 
