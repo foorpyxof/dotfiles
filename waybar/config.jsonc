@@ -5,12 +5,11 @@
   "margin-bottom" : 0,
   "margin-top" : 10,
   "position" : "top",
-  "margin-right" : 100,
-  "margin-left" : 100,
+  "margin-right" : 50,
+  "margin-left" : 50,
 
   "modules-left" : ["sway/scratchpad", "sway/workspaces"],
   "modules-center" : ["custom/applauncher"],
-  "modules-right" : ["network", "pulseaudio", "tray", "battery", "clock"],
 
   "sway/workspaces" : {
     "all-outputs" : false,
@@ -28,11 +27,19 @@
     "tooltip" : false,
   },
 
+  "custom/dnd_mode" : {
+    "interval" : 1,
+    "exec" : "/bin/bash -c 'if [[ \"$(swaync-client -D)\" = \"true\" ]] || [[ \"$(swaync-client --get-inhibited)\" = \"true\" ]]; then echo 🔕; fi'",
+    "tooltip" : true,
+    "tooltip-format" : "Do Not Disturb enabled",
+  },
+
   "network" : {
-    "format" : "{ifname} | {bandwidthDownBits} ⇃↾ {bandwidthUpBits}",
+    "format" : "{ifname}",
     "format-disconnected" : "⮾ Network not connected",
     "interval" : 3,
-    "tooltip" : false,
+    "tooltip" : true,
+    "tooltip-format" : "{bandwidthDownBits} ⇃↾ {bandwidthUpBits}",
   },
 
   "pulseaudio" : {
@@ -43,7 +50,7 @@
 
   "clock" : {
     "interval" : 1,
-    "format" : "🕓 {:%H:%M:%S | %a %b %d}",
+    "format" : "{:%H:%M:%S | %a %b %d}",
     "tooltip-format" : "<tt>{calendar}</tt>",
     "calendar" : {
       "format" : {
