@@ -1,2 +1,2 @@
 ;; keymaps
-(keymap-global-set "C-c RET" 'compile)
+(keymap-global-set "C-x RET" 'compile)
