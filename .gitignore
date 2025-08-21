@@ -2,3 +2,5 @@ nvim/lazy-lock.json
 nvim/lazyvim.json
 nvim/stylua.toml
 nvim/.neoconf.json
+
+sway/focus_mode_override

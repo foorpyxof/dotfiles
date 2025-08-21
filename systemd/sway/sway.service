@@ -4,13 +4,9 @@ Documentation=man:sway(5)
 
 [Service]
 Type=simple
-EnvironmentFile=-%h/.config/sway/env
 ExecStartPre=systemctl --user unset-environment WAYLAND_DISPLAY DISPLAY
-ExecStartPre=sleep 2
 
-; add ARG[X] variables to the ~/.config/sway/env file to use as command line arguments
-; if you need more than 6, add more to the line below
-ExecStart=/usr/bin/sway $ARG1 $ARG2 $ARG3 $ARG4 $ARG5 $ARG6
+ExecStart=bash -c 'cat ~/.config/sway/args | xargs /usr/bin/sway > ~/.logs/sway.latest.log 2>&1'
 
 Restart=on-failure
 RestartSec=1

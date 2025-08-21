@@ -74,7 +74,7 @@ if os.getenv("IDF_PATH") ~= nil and clangd_path ~= nil then
       clangd_path,
       "--background-index",
       "--clang-tidy",
-      "--header-insertion=iwyu",
+      "--header-insertion=never",
       "--completion-style=detailed",
       "--function-arg-placeholders",
       "--fallback-style=llvm",
