@@ -9,3 +9,5 @@ alias less='bat'
 alias gdb='gdb -q'
 
 alias neofetch='fastfetch'
+
+alias tree='tree -C --hyperlink'

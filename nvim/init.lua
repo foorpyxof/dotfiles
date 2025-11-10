@@ -2,7 +2,7 @@
 require("config.lazy")
 
 vim.cmd("source ~/.vimrc")
-vim.cmd("colorscheme cyberdream")
+vim.cmd("colorscheme catppuccin")
 -- vim.b.autoformat = false
 
 vim.keymap.set("n", "<leader>r", "<C-W>r")
@@ -13,5 +13,5 @@ vim.keymap.set({ "n", "i", "v" }, "<Left>", "<Nop>", { noremap = true, silent = 
 vim.keymap.set({ "n", "i", "v" }, "<Right>", "<Nop>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "<leader>m", function()
-	vim.cmd("!make")
+  vim.cmd("!make")
 end)

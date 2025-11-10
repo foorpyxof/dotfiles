@@ -62,7 +62,7 @@ require("lazy").setup({
 
 require("lualine").setup({
   options = {
-    theme = "cyberdream",
+    theme = "catppuccin",
   },
 })
 

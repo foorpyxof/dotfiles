@@ -4,5 +4,8 @@ return {
   },
   {
     "maxmx03/fluoromachine.nvim",
-  }
+  },
+  {
+    "catppuccin/nvim",
+  },
 }
