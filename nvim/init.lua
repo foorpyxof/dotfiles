@@ -12,6 +12,13 @@ vim.keymap.set({ "n", "i", "v" }, "<Down>", "<Nop>", { noremap = true, silent = 
 vim.keymap.set({ "n", "i", "v" }, "<Left>", "<Nop>", { noremap = true, silent = true })
 vim.keymap.set({ "n", "i", "v" }, "<Right>", "<Nop>", { noremap = true, silent = true })
 
+vim.keymap.set("n", "<Tab>", function()
+  vim.cmd("bnext")
+end)
+vim.keymap.set("n", "<S-Tab>", function()
+  vim.cmd("bprev")
+end)
+
 vim.keymap.set("n", "<leader>m", function()
   vim.cmd("!make")
 end)
