@@ -17,3 +17,6 @@ set scroll=5
 set mouse=a
 
 set tags=./tags;,~/.config/nvim/tags
+
+tnoremap <Esc> <C-\><C-n>
+nnoremap <leader>r <C-W>r

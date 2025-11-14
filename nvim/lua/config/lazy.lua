@@ -110,6 +110,16 @@ require("fluoromachine").setup({
   theme = "fluoromachine",
 })
 
+-- require("presence").setup({
+--   neovim_image_text = "neovim btw",
+--   main_image = "file",
+--   buttons = { { label = "uwu", url = "https://goodgirl.dev" } },
+-- })
+require("neocord").setup({
+  global_timer = true,
+  buttons = { { label = "uwu", url = "https://goodgirl.dev" } },
+})
+
 local harpoon = require("harpoon")
 harpoon:setup()
 
