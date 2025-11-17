@@ -66,22 +66,6 @@ require("lualine").setup({
   },
 })
 
-local clangd_path = io.popen("find $HOME/.espressif/tools/esp-clang/ -name 'clangd' | grep --color=never -z ."):read()
-
-if os.getenv("IDF_PATH") ~= nil and clangd_path ~= nil then
-  require("lspconfig").clangd.setup({
-    cmd = {
-      clangd_path,
-      "--background-index",
-      "--clang-tidy",
-      "--header-insertion=never",
-      "--completion-style=detailed",
-      "--function-arg-placeholders",
-      "--fallback-style=llvm",
-    },
-  })
-end
-
 require("cyberdream").setup({
   cache = true,
   terminal_colors = true,
@@ -117,7 +101,7 @@ require("fluoromachine").setup({
 -- })
 require("neocord").setup({
   global_timer = true,
-  buttons = { { label = "uwu", url = "https://goodgirl.dev" } },
+  buttons = { { label = "wowie", url = "https://goodgirl.dev" } },
 })
 
 local harpoon = require("harpoon")
