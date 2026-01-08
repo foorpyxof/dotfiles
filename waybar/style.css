@@ -145,6 +145,15 @@ button:hover {
     animation-direction: alternate;
 }
 
+#battery.warning:not(.charging) {
+    background-color: #DBB930;
+    animation-name: blink;
+    animation-duration: 2.0s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 #power-profiles-daemon {
     padding-right: 15px;
 }
