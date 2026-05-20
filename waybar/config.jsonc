@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top", // Waybar at top layer
-    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     "spacing": 1,
     // Choose the order of the modules
@@ -9,9 +9,11 @@
         "sway/workspaces",
         "sway/scratchpad",
         "sway/mode",
-        "custom/media"
+        "custom/media",
     ],
     "modules-center": [
+        "clock",
+        "battery",
     ],
     "modules-right": [
         "idle_inhibitor",
@@ -20,9 +22,7 @@
         "power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
-        "battery",
-        "clock",
+        // "temperature",
         "tray",
     ],
     "sway/mode": {
@@ -36,7 +36,7 @@
         "tooltip-format": "{app}: {title}"
     },
     "idle_inhibitor": {
-        "format": "{icon}",
+        "format": "{icon} ",
         "format-icons": {
             "activated": "",
             "deactivated": ""
@@ -52,16 +52,16 @@
     "clock": {
         "timezone": "Europe/Amsterdam",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%T | %a %d %b %Y}",
+        "format": "{:%T | %a %d %b}",
         "format-alt": "{:%Y-%m-%d}",
         "interval" : 1
     },
     "cpu": {
-        "format": "cpu {usage}%",
+        "format": "{usage}% \uf4bc",
         "tooltip": false
     },
     "memory": {
-        "format": "mem {}%"
+        "format": "{}% \uefc5"
     },
     "temperature": {
         "critical-threshold": 80,
@@ -91,7 +91,8 @@
     },
     "pulseaudio": {
         "scroll-step": 5, // %, can be a float
-        "format": "{volume}% {icon}\t{format_source}",
+        "format": "{volume}% {icon}",
+        // "format": "{volume}% {icon}\t{format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "\t{format_source}",
