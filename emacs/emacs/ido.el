@@ -1,3 +1,5 @@
+;; -*- lexical-binding: nil; -*-
+
 ;; ido
 (require 'ido)
 (ido-mode 1)

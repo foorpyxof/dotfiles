@@ -1,3 +1,5 @@
+;; -*- lexical-binding: nil; -*-
+
 ;; line numbers
 (display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
