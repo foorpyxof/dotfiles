@@ -20,6 +20,8 @@
         isearch-forward-regexp
         isearch-repeat-backward
         kill-region
+        markdown-beginning-of-line
+        markdown-end-of-line
         upcase-region
         ))
 
@@ -34,6 +36,7 @@
         keyboard-escape-quit
         kmacro-end-or-call-macro
         kmacro-start-macro-or-insert-counter
+        markdown-outdent-or-delete
         mc/mark-next-lines
         mc/mark-previous-lines
         ))
