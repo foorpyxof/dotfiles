@@ -28,7 +28,8 @@
 )
 
 (elcord-mode)
-;; (add-hook 'prog-mode-hook 'format-all-mode)
+(add-hook 'prog-mode-hook 'hl-todo-mode)
+(put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
 (setq elcord-display-elapsed nil)
