@@ -27,9 +27,11 @@
 
 (setq mc/cmds-to-run-once
       '(
+        format-all-buffer
         goto-line
         goto-line-relative
         ido-find-file
+        ido-switch-buffer
         isearch-delete-char
         isearch-exit
         isearch-printing-char

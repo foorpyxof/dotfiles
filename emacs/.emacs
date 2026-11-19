@@ -11,10 +11,11 @@
      default))
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(batppuccin company elcord format-all magit markdown-mode markdownfmt
-                multiple-cursors phi-search phi-search-dired
-                phi-search-mc typst-preview typst-ts-mode yaml
-                yaml-mode yasnippet yasnippet-classic-snippets)))
+   '(batppuccin company csproj-mode elcord format-all magit markdown-mode
+                markdownfmt multiple-cursors phi-search
+                phi-search-dired phi-search-mc typst-preview
+                typst-ts-mode yaml yaml-mode yasnippet
+                yasnippet-classic-snippets)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
